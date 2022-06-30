@@ -1,0 +1,46 @@
+.shop-now {
+  position: relative;
+
+  &__block {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $gray;
+
+    margin-bottom: 10px;
+
+    @include onTablet {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+
+    @include onTablet {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,7 +1,23 @@
 @import "utils";
-@import "fonts";
-@import "typography";
 
-body {
-  background: $c-gray;
-}
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/top-actions";
+@import "blocks/icon";
+@import "blocks/grid";
+@import "blocks/button";
+@import "blocks/banner";
+@import "blocks/benefit";
+@import "blocks/about-us";
+@import "blocks/info";
+@import "blocks/fon";
+@import "blocks/certificate";
+@import "blocks/reason";
+@import "blocks/feedback";
+@import "blocks/slider";
+@import "blocks/shop-now";
+@import "blocks/contact";
+@import "blocks/footer";

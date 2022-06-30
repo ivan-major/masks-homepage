@@ -1,0 +1,60 @@
+.button {
+  width: 115px;
+  height: 47px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  background-color: $blue;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+
+  &__header {
+    width: 100px;
+    height: 35px;
+
+    @include onTablet {
+      width: 123px;
+      height: 47px;
+    }
+  }
+
+  &:hover {
+    border: 1px solid $blue;
+    background-color: #fff;
+    color: $blue;
+  }
+
+  &__yellow {
+    border: 1px solid $yellow;
+    background-color: #fff;
+    color: $yellow;
+
+    &:hover {
+      border: none;
+      background-color: $yellow;
+      color: #fff;
+    }
+  }
+
+  &__info {
+    background-color: $yellow;
+    border: 1px solid $blue;
+    color: $blue;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $yellow;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}

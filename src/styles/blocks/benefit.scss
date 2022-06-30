@@ -1,0 +1,81 @@
+.benefit {
+  background-color: $light-blue;
+  padding: 20px 0;
+
+  @include onTablet {
+    padding: 40px 0;
+  }
+
+  @include onDesktop {
+    padding: 75px 0 55px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include onTablet {
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      gap: 20px;
+    }
+
+    &--icon {
+      height: 100%;
+      width: 2em;
+
+      @include onTablet {
+        height: 2em;
+      }
+
+      @include onDesktop {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    &--content {
+      display: grid;
+      gap: 10px;
+      font-family: "Open Sans", sans-serif;
+
+      @include onDesktop {
+        gap: 15px;
+      }
+    }
+
+    &--title {
+      margin: 0;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: $dark-blue;
+
+      @include onDesktop {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    &--text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: $gray;
+
+      @include onDesktop {
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+  }
+}

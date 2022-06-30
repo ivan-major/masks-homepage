@@ -1,0 +1,122 @@
+.feedback {
+  position: relative;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+
+    @include onTablet {
+      padding: 30px;
+    }
+
+    @include onDesktop {
+      padding: 40px;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: left;
+    height: 16px;
+  }
+
+  &__star {
+    background-image: url(../images/feedback/star-active.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  &__social {
+    background-image: url(../images/icon/fb.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.5;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark-blue;
+
+    margin-bottom: 10px;
+
+    @include onTablet {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 15px;
+    }
+
+    @include onDesktop {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &--img {
+      width: 24px;
+      height: 24px;
+      background-color: $gray;
+      border-radius: 50%;
+    }
+
+    &--name {
+      text-transform: uppercase;
+      color: $dark-blue;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+
+      @include onTablet {
+        font-size: 16px;
+        line-height: 16px;
+      }
+  
+      @include onDesktop {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+
+    &--position {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      color: $gray;
+
+      
+      @include onTablet {
+        font-size: 13px;
+        line-height: 13px;
+      }
+  
+      @include onDesktop {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+}

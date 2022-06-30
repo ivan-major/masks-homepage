@@ -1,4 +1,35 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: $dark-blue;
+
+  @include onTablet {
+    margin-bottom: 30px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 40px;
+    font-size: 72px;
+    line-height: 82px;
+  }
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: $dark-blue;
+
+  @include onTablet {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  @include onDesktop {
+    font-size: 48px;
+    line-height: 50px;
+  }
 }

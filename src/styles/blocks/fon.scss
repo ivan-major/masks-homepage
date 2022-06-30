@@ -1,0 +1,14 @@
+.fon {
+  transform: translateY(20%);
+  width: 100%;
+  height: 1500px;
+  position: absolute;
+
+  @include onTablet {
+    height: 2000px;
+  }
+
+  @include onDesktop {
+    height: 1500px;
+  }
+}

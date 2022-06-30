@@ -1,0 +1,21 @@
+.icon {
+  display: block;
+  height: 40px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--menu {
+    background-image: url(../images/icon/menu.svg);
+  }
+
+  &--cross {
+    height: 40px;
+    background-image: url(../images/icon/cross.svg);
+
+    @include onDesktop {
+      height: 0;
+    }
+  }
+}

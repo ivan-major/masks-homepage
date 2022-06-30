@@ -1,0 +1,215 @@
+.info {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    right: 0;
+    width: 100%;
+
+    transform: translateY(-25%);
+
+    @include onDesktop {
+      width: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #fff;
+
+    @include onTablet {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &--container {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+      width: 50%;
+
+      @include onTablet {
+        padding: 0 30px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 400px;
+
+    margin-bottom: 20px;
+
+    @include onTablet {
+      height: 500px;
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      height: 100%;
+    }
+
+    &--img {
+      width: 100%;
+      height: 400px;
+
+      object-fit: cover;
+
+      @include onTablet {
+        height: 500px;
+      }
+
+      @include onDesktop {
+        height: 100%;
+      }
+    }
+
+    &--text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      background-color: $blue;
+
+      @include onTablet {
+        height: 50%;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--text {
+      box-sizing: border-box;
+      padding: 20px 10px;
+
+      &-1 {
+        background-color: #fff;
+        color: $gray;
+      }
+
+      &-2 {
+        background-color: $blue;
+
+        @include onDesktop {
+          border-top-right-radius: 16px;
+        }
+      }
+
+      @include onTablet {
+        padding: 0 30px;
+      }
+
+      @include onTablet {
+        padding: 90px 30px;
+      }
+    }
+  }
+
+  &__contact {
+    background-color: $yellow;
+    padding: 20px;
+    width: 100%;
+
+    @include onTablet {
+      padding: 30px;
+    }
+
+    &--title {
+      margin-bottom: 5px;
+
+      @include onDesktop {
+        margin-bottom: 0;
+      }
+    }
+
+    &--text {
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    &--info {
+      display: block;
+
+      @include onTablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &--tel {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      margin-top: 10px;
+      
+      @include onTablet {
+        gap: 30px;
+        margin-top: 0;
+      }
+
+      &-title {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+
+        color: $blue;
+
+        @include onTablet {
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        @include onDesktop {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+
+      &-number {
+        text-decoration: none;
+
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000;
+
+        &:hover {
+          color: $blue;
+        }
+
+        @include onTablet {
+          font-size: 20px;
+          line-height: 20px;
+        }
+
+        @include onDesktop {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.header {
+  background-color: $light-blue;
+
+  @include onDesktop {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .header__link {
+    &--menu {
+      margin-left: 40px;
+      @include onDesktop {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.logo {
+  width: 120px;
+  height: 35px;
+
+  @include onTablet {
+    width: 160px;
+    height: 40px;
+  }
+}
